@@ -44,10 +44,16 @@
             background-size: 100% 100%;
             color: #000000;
             font-family: sans-serif;
-            background:
-            radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+            background: radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
             radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),rgb(170, 69, 51);
             background-size: 20px 20px;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+            -moz-user-drag: none;
+            -khtml-user-drag: none;
+            -webkit-user-drag: none;
         }
         img.a {
             border: 1px;
@@ -68,27 +74,41 @@
         }   
         div.a {
             width: 100%;
-            height: auto;
+            height: 100%;
             background-color: #f76f6f;
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
+            z-index: -1;
             
         }
         div.a {
             background:
             radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),
             radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;
-            background-color: rgb(219, 61, 61);
+            background-color: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), rgb(219, 61, 61);
             background-size:75px 100px;
         }
         div.b {
             display: flex;
             justify-content: center;
-            margin-top: 10em;
+        }
+        div.c {
+            width: 25%;
+            padding: 10px;
+            margin-left: 36%;
+            border: 1px solid #424141;
+            margin-bottom: 0;
+            margin-top: 0;
+            background:
+            linear-gradient(135deg, #d35050 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+            linear-gradient(225deg, #d35050 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+            background-color:#d35050;
+            background-size: 64px 128px;
         }
         h1, h3 {
+            
             text-align: center;
             color: #fff;
             text-shadow: 0 1px 0 #000000, 0 1px 0 #000000, 0 1px 1px #000000, 1px 1px 1px #000000, 1px 1px 1px #000000, 1px 0 1px #000000, 1px 1px 1px #000000;
@@ -139,10 +159,15 @@
 <body>
 <div>
 <div class="a">
-    <div>
-        <h1>BSIT Curriculum</h1>
-        <h3>2nd Semester of 2nd Year</h3>
-    </div>
+    <div></div>
+</div>
+<div class="c">
+<div>
+<h1>BSIT Curriculum</h1>
+</div>
+<div>
+<h3>  2nd Semester of 2nd Year</h3>
+</div>
 </div>
 </div>
 <div class="b">
