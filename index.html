@@ -37,28 +37,62 @@
 		.col-12 {width: 100%;}
 		}
         body {
-            background-image: url(https://media-exp1.licdn.com/dms/image/C4D1BAQFLs2jkq5_7zA/company-background_10000/0?e=2159024400&v=beta&t=Fihh7yHQUXT0OnA8Z3XtSqLOGom6b8AdknRDjLRKkpA);
+            background-image: url();
             background-attachment: fixed;
             background-repeat: no-repeat;
             max-width: auto;
             background-size: 100% 100%;
             color: #000000;
             font-family: sans-serif;
+            background:
+            radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+            radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),rgb(170, 69, 51);
+            background-size: 20px 20px;
         }
-        img {
+        img.a {
             border: 1px;
             border-style: solid;
             border-color: #ff0000;
             border-radius: 50%;
             float: left;
-            width: 100px;
-            margin: 0 auto;
+            width: 80px;
+            margin-top: 1em;
+            margin-left: 0.5em;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+            -moz-user-drag: none;
+            -khtml-user-drag: none;
+            -webkit-user-drag: none;
+        }   
+        div.a {
+            width: 100%;
+            height: auto;
+            background-color: #f76f6f;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            
         }
-        .a {
-            display: inline-block;
-            margin-left: 30%;
+        div.a {
+            background:
+            radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),
+            radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;
+            background-color: rgb(219, 61, 61);
+            background-size:75px 100px;
         }
-        
+        div.b {
+            display: flex;
+            justify-content: center;
+            margin-top: 10em;
+        }
+        h1, h3 {
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 1px 0 #000000, 0 1px 0 #000000, 0 1px 1px #000000, 1px 1px 1px #000000, 1px 1px 1px #000000, 1px 0 1px #000000, 1px 1px 1px #000000;
+        }
         table {
             background-color: #ffffff;
             border-collapse: collapse;
@@ -74,11 +108,17 @@
             color: #ffffff;
             text-align: left;
         }
-        th {
+        th.a {
             padding: 12px 15px;
         }
-        td {
+        th.b {
+            padding: 12px 5em;
+        }
+        td.a {
             padding: 12px 15px;
+        }
+        td.b {
+            padding: 12px 5em;
         }
         tbody tr {
             border-bottom: 1px solid #dddddd;
@@ -89,11 +129,6 @@
         tbody tr:last-of-type {
             border-bottom: 2px solid #980000;
         }
-        h1, h3 {
-            text-shadow: 0 0 2px #000000;
-            color: #ffd9d9;
-            text-align: center;
-        }
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -102,54 +137,57 @@
     <title>PUP Santa Maria Campus BSIT Curriculum</title>
 </head>
 <body>
-    <img src="https://th.bing.com/th/id/OIP.-RPrfUl9uE5dDG7cP_4sLgHaHa?pid=ImgDet&rs=1" alt="PUP LOGO"/>
-    <div class="a">
-    <h1><strong>BSIT Curriculum</strong></h1>
-    <h3>2nd Year, 2nd Semester</h3>
-    </div>
+<div>
+<div class="a">
     <div>
-    <table style="width:50%">
+        <h1>BSIT Curriculum</h1>
+        <h3>2nd Semester of 2nd Year</h3>
+    </div>
+</div>
+</div>
+<div class="b">
+<table style="width:50%">
     <thead>
         <tr>
-          <th>Subject Code</th>
-          <th>Subject Title</th>
+          <th class="a">Subject Code</th>
+          <th class="b">Subject Title</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-          <td>COMP 20083</td>
-          <td>Object Oriented Programming</td>
+          <td class="a">COMP 20083</td>
+          <td class="b">Object Oriented Programming</td>
         </tr>
         <tr>
-            <td>COMP 20093</td>
-            <td>Information Management</td>
+            <td class="a">COMP 20093</td>
+            <td class="b">Information Management</td>
         </tr>
         <tr>
-            <td>COMP 20143</td>
-            <td>Human Computer Interaction</td>
+            <td class="a">COMP 20143</td>
+            <td class="b">Human Computer Interaction</td>
           </tr>
           <tr>
-            <td>COMP 20193</td>
-            <td>Network Administration</td>
+            <td class="a">COMP 20193</td>
+            <td class="b">Network Administration</td>
         </tr>
         <tr>
-            <td>COMP 20203</td>
-            <td>Quantitative Methods with Modeling and Simulation</td>
+            <td class="a">COMP 20203</td>
+            <td class="b">Quantitative Methods with Modeling and Simulation</td>
         </tr>
         <tr>
-            <td>GEED 20113</td>
-            <td>People and Earth's Ecosystem</td>
+            <td class="a">GEED 20113</td>
+            <td class="b">People and Earth's Ecosystem</td>
         </tr>
         <tr>
-            <td>INTE 30023</td>
-            <td>Integrative Programming and Technologies 1</td>
+            <td class="a">INTE 30023</td>
+            <td class="b">Integrative Programming and Technologies 1</td>
         </tr>
         <tr>
-            <td>PHED 10042</td>
-            <td>Team Sports</td>
+            <td class="a">PHED 10042</td>
+            <td class="b">Team Sports</td>
         </tr>
     </tbody>
-      </table>
-    </div>
+</table>
+</div>
 </body>
 </html>
