@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        var url = window.location.href;
+        url = url.split('.html')[0];
+        //url = url.substring(0, url.lastIndexOf("."));
+        window.history.replaceState( null, null, url );
+    </script>
     <style type="text/css">
         		/*For Mobile Phones*/
 		[class*="col-"] {
@@ -154,7 +160,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://www.pngkey.com/png/full/52-528919_the-pup-logo-polytechnic-university-of-the-philippines.png" type="image/x-icon"/>
-    <title>PUP Santa Maria Campus BSIT Curriculum</title>
+    <title>PUP Santa Maria Campus BSIT Curriculum</title
 </head>
 <body>
 <div>
